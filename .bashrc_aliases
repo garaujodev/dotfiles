@@ -1,0 +1,6 @@
+export EDITOR='vim'
+
+# DEV
+alias be="bundle exec"
+alias migrate="bundle exec rake db:migrate; RAILS_ENV=test bundle exec rake db:migrate"
+alias ng="ngrok http"

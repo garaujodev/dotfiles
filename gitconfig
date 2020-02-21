@@ -1,0 +1,28 @@
+[user]
+  name = Gustavo Araujo
+  email = garaujodev@gmail.com
+[github]
+  username = garaujodev
+  user = garaujodev
+
+[color]
+  ui = auto
+
+[alias]
+  st  = status --short --branch
+  ci  = commit
+  br  = branch
+  co  = checkout
+  df  = diff
+  lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  who = shortlog -s --
+  dft = difftool -y
+  d = difftool
+
+#[commit]
+#  gpgsign = true
+
+[core]
+  excludesfile = ~/.gitignore_global
+  autosetuprebase = always
+

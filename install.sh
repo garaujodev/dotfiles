@@ -1,5 +1,5 @@
 #!/bin/bash
-files=( gitconfig )
+files=( gitconfig hyper.js )
 for filename in ${files[@]}
 do
   [[ -s $HOME/.$filename ]] && rm $HOME/.$filename

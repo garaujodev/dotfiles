@@ -1,5 +1,5 @@
 #!/bin/bash
-files=( gitconfig hyper.js pryrc)
+files=( gitconfig hyper.js pryrc gemrc)
   
 for filename in ${files[@]}
 do

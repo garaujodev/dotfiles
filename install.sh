@@ -1,4 +1,4 @@
-files=( gitconfig pryrc gemrc alias zshrc)
+files=( gitconfig gitignore_global pryrc gemrc alias zshrc)
   
 for filename in ${files[@]}
 do

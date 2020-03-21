@@ -19,10 +19,12 @@
   dft = difftool -y
   d = difftool
 
-#[commit]
-#  gpgsign = true
+[commit]
+  gpgsign = true
 
 [core]
   excludesfile = ~/.gitignore_global
   autosetuprebase = always
 
+[gpg]
+	program = gpg

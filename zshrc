@@ -75,7 +75,12 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(
+  git
+  asdf
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 

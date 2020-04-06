@@ -49,3 +49,7 @@ __pycache__/
 .ackrc
 # Ruby
 .byebug_history
+
+# Developer preferences
+Brewfile.lock.json
+.tool-versions

@@ -1,5 +1,5 @@
-files=( gitconfig gitignore_global pryrc gemrc alias zshrc vimrc)
-  
+files=( gitconfig gitignore_global pryrc gemrc alias zshrc vimrc tigrc)
+
 for filename in ${files[@]}
 do
   [[ -s $HOME/.$filename ]] && rm $HOME/.$filename

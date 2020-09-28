@@ -68,7 +68,6 @@ ZSH_THEME="spaceship"
 
 # Enable homebrew's completions
 if type brew &>/dev/null; then
-  eval "$(hub alias -s)"
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
   autoload -Uz compinit

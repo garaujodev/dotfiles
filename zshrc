@@ -70,8 +70,7 @@ ZSH_THEME="spaceship"
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
-  autoload -Uz compinit
-  compinit
+  autoload -Uz compinit && compinit
 fi
 
 plugins=(
@@ -79,6 +78,7 @@ plugins=(
   asdf
   zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -130,5 +130,6 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
+autoload -Uz compinit && compinit
+
 export PATH="/usr/local/sbin:$PATH"

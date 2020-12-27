@@ -133,5 +133,7 @@ autoload -U +X bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_DOCKER_SHOW=false

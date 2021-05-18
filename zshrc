@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.alias
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_DOCKER_SHOW=false

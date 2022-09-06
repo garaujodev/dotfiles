@@ -5,7 +5,7 @@ NC=$'\033[0m'
 GREEN=$'\033[92m'
 
 while true; do
-    read -p "All of your branches (${GREEN}except${NC} '${RED}main${NC}' ${GREEN}and${NC} '${RED}master${NC}') will be DELETED! ${RED}Are you sure about this? ${NC}(y/n): " yn
+    read -p "All of your branches (${GREEN}except${NC} '${RED}main${NC}' ${GREEN}and${NC} '${RED}master${NC}') will be DELETED! ${RED}Are you sure about this? ${NC}(y/N): " yn
     case "$yn" in
         [Yy]*)
             git branch | grep -v 'main\|master' | grep -v ^* | xargs git branch -D
@@ -16,6 +16,8 @@ while true; do
             exit
             ;;
         *)
-            printf %s\\n "Please answer yes (y) or no (n)."
+            echo 'A smart decision!'
+            exit
+            ;;
     esac
 done

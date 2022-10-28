@@ -37,3 +37,5 @@
 [pager]
 	branch = false
 	stash = false
+[init]
+	defaultBranch = main

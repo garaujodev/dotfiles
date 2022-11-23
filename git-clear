@@ -12,11 +12,11 @@ while true; do
             break
             ;;
         [Nn]*)
-            echo 'A smart decision!'
+            echo 'Smart decision!'
             exit
             ;;
         *)
-            echo 'A smart decision!'
+            echo 'Smart decision!'
             exit
             ;;
     esac

@@ -10,8 +10,8 @@ done
 
 for binary in ${binaries[@]}
 do
-  [[ -s $HOME/.local/bin/$binary ]] && rm $HOME/.local/bin/$binary
-  ln -sf $PWD/$binary ~/.local/bin/$binary
+  [[ -s $HOME/.bin/$binary ]] && rm $HOME/.bin/$binary
+  ln -sf $PWD/$binary ~/.bin/$binary
 done
 
 source ~/.zshrc

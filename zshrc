@@ -110,3 +110,5 @@ export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_byte
 source $HOME/.alias
 
 SPACESHIP_PROMPT_SEPARATE_LINE=false
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

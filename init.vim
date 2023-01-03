@@ -36,6 +36,8 @@ Plug 'rakr/vim-one'
 
 Plug 'github/copilot.vim'
 
+Plug 'APZelos/blamer.nvim'
+
 " If you are using Vim-Plug
 Plug 'tjdevries/colorbuddy.nvim'
 Plug 'marko-cerovac/material.nvim',

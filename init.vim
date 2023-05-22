@@ -13,7 +13,6 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'Olical/vim-enmasse'
 
 Plug 'tpope/vim-commentary'
-
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
@@ -37,8 +36,8 @@ Plug 'rakr/vim-one'
 Plug 'github/copilot.vim'
 
 Plug 'APZelos/blamer.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
-" If you are using Vim-Plug
 Plug 'tjdevries/colorbuddy.nvim'
 Plug 'marko-cerovac/material.nvim',
 
@@ -70,7 +69,6 @@ hi Comment cterm=italic
 set termguicolors
 hi LineNr ctermbg=NONE guibg=NONE
 
-
 set hidden
 set number
 set mouse=a
@@ -78,22 +76,28 @@ set inccommand=split
 set clipboard+=unnamedplus
 set omnifunc=javascriptcomplete#CompleteJS
 
+let g:blamer_enabled = 1
+
 let mapleader="\<space>"
 nnoremap <leader>; A;<esc>
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
-"""nnoremap <c-p> :Files<cr>
-nnoremap <c-p> :GitFiles<CR>
+""" nnoremap <c-p> :Files<cr>
+nnoremap <c-p> :GitFiles --cached --others --exclude-standard<CR>
 nnoremap <c-f> :Ag<space>
-nnoremap <c-b> :NERDTreeToggle<cr>
+nnoremap <c-b> :NERDTreeToggle<CR>
+nnoremap <c-o> :NERDTreeFind<CR>
 
 nnoremap <a-Right> :tabn<CR>
 nnoremap <a-Left>  :tabp<CR>
 
+nnoremap <a-Up> :m-2<CR>
+nnoremap <a-Down> :m+<CR>
+
 """ map  <C-l> :tabn<CR>
 """ map  <C-h> :tabp<CR>
-""" map  <C-n> :tabnew<CR>
+""" nnoremap  <c-n> :tabnew<CR>
 
 let g:coc_user_config = {}
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':SplitIfNotOpen4COC'

@@ -17,6 +17,7 @@ alias migrate="bundle exec rake db:migrate; RAILS_ENV=test bundle exec rake db:m
 alias ng="ngrok http"
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias run-postgres="~/.asdf/installs/postgres/12.8/bin/pg_ctl -D ~/.asdf/installs/postgres/12.8/data -l logfile start"
+alias run-redis="redis-server --daemonize yes"
 
 # others
 alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'

@@ -70,7 +70,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf zsh-autosuggestions zsh-safe-rm zsh-bd)
+plugins=(git asdf zsh-autosuggestions zsh-safe-rm zsh-bd cd-ls)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,6 +98,9 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
+
+
+export CD_LS_COMMAND="ls -lha"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
